@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人網頁 - zhTing0113</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">zhTing0113</div>
+            <ul class="nav-links">
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#about">關於</a></li>
+                <li><a href="#projects">專案</a></li>
+                <li><a href="#contact">聯絡</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>歡迎來到我的個人網頁</h1>
+            <p>開發者 | 程式設計愛好者</p>
+            <button class="btn" onclick="scrollToSection('about')">了解更多</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>關於我</h2>
+            <p>我是一位熱情的開發者，喜歡學習新技術和解決問題。在這個網頁上，你可以了解我的專案和技能。</p>
+            <div class="skills">
+                <h3>技能</h3>
+                <ul id="skillsList">
+                    <li>JavaScript</li>
+                    <li>HTML & CSS</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>我的專案</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <div class="project-card">
+                    <h3>個人網頁</h3>
+                    <p>使用 HTML、CSS 和 JavaScript 建立的響應式個人作品集網站。</p>
+                    <a href="#" class="project-link">查看更多 →</a>
+                </div>
+                <div class="project-card">
+                    <h3>待新增項目</h3>
+                    <p>此處可新增你的專案描述。</p>
+                    <a href="#" class="project-link">查看更多 →</a>
+                </div>
+                <div class="project-card">
+                    <h3>學習資源</h3>
+                    <p>建立的程式學習資源和筆記。</p>
+                    <a href="#" class="project-link">查看更多 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>聯絡我</h2>
+            <div class="contact-info">
+                <p>如有任何問題或合作機會，歡迎透過以下方式聯絡我：</p>
+                <ul>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/zhTing0113" target="_blank">zhTing0113</a></li>
+                    <li><strong>Email:</strong> <span id="email">點擊顯示</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 zhTing0113. 保留所有權利。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
